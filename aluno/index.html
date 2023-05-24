@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aluno</title>
+</head>
+<body>
+    <h1>Informações para Alunos</h1>
+    
+    <div class="center">
+        <button onclick="CursosFunction()">Cursos</button>
+    </div>
+    <div id="cursos">
+        <h2>Cursos</h2>
+        <ul>
+            <li>Curso 1</li>
+            <li>Curso 2</li>
+            <li>Curso 3</li>
+        </ul>
+    </div>
+
+    <div class="center">
+        <button onclick="TestesFunction()">Testes</button>
+    </div>
+    <div id="testes">
+        <h2>Testes</h2>
+        <ul>
+            <li>Teste 1</li>
+            <li>Teste 2</li>
+            <li>Teste 3</li>
+        </ul>
+    </div>
+
+    <div class="center">
+        <button onclick="VagasFunction()">Vagas de Emprego</button>
+    </div>
+    <div id="vagas">
+        <h2>Vagas Disponíveis</h2>
+        <ul>
+            <li>Vaga 1</li>
+            <li>Vaga 2</li>
+            <li>Vaga 3</li>
+        </ul>
+    </div>
+
+
+    <script>
+        function CursosFunction() { 
+  var x = document.getElementById("cursos"); 
+  if (x.style.display === "none") { 
+    x.style.display = "block"; 
+  } else { 
+    x.style.display = "none"; 
+  } 
+} 
+
+function TestesFunction() { 
+  var x = document.getElementById("testes"); 
+  if (x.style.display === "none") { 
+    x.style.display = "block"; 
+  } else { 
+    x.style.display = "none"; 
+  } 
+} 
+
+function VagasFunction() { 
+  var x = document.getElementById("vagas"); 
+  if (x.style.display === "none") { 
+    x.style.display = "block"; 
+  } else { 
+    x.style.display = "none"; 
+  } 
+} 
+    </script>
+</body>
+</html>
